@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="container-fluid mt-2 pt-0 extra-geom mx-auto">
+    <header class="mt-5 text-center" style="display: flex; align-items: flex-start; justify-content: center;">
+        <!-- Incluir el SVG del personaje desde la carpeta estática -->
+        <object type="image/svg+xml" data="{% static 'images/character.svg' %}" id="character" class="profile-photo" style="max-width: 300px; margin-right: 50px;"></object>
+        
+        <div class="description" style="max-width: 600px; margin-left: 50px;">
+            <h1 class="display-4"><strong>Juan José</strong></h1>
+            <h3 class="text-muted">Desarrollador de Software</h3>
+            <p class="lead text-left" style="max-width: 500px;">Apasionado desarrollador de software con experiencia en el diseño y desarrollo de aplicaciones web y móviles. Hábil en varios lenguajes de programación y tecnologías como JavaScript, Python, Java, Django, y Node.js. Comprometido con la creación de soluciones eficientes y escalables que satisfagan las necesidades de los usuarios. Siempre en busca de nuevos desafíos y oportunidades para aprender y crecer en el campo de la tecnología.</p>
+            
+
+            <!-- Iconos de redes sociales -->
+            <div class="social-icons mt-3">
+                <a href="https://www.linkedin.com/in/juan-jos%C3%A9-gal%C3%A1n-chilet/" target="_blank" class="social-icon">
+                    <img src="{% static 'images/linkedin.png' %}" alt="LinkedIn" style="max-width: 30px;">
+                </a>
+                <a href="https://github.com/JuanGachi" target="_blank" class="social-icon">
+                    <img src="{% static 'images/github.png' %}" alt="GitHub" style="max-width: 30px;">
+                </a>
+              
+            </div>
+        </div>
+    </header>
+</div>
+
+{% endblock %}
